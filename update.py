@@ -7,7 +7,7 @@ import json
 update_file = "update_status.json"
 
 # GitHub URL for the raw update file
-url = "https://raw.githubusercontent.com/idkmanegtegeg/update-checker/main/update.py"
+url = "https://github.com/idkmanegtegeg/update-checker"
 
 
 def get_current_version():
@@ -15,8 +15,8 @@ def get_current_version():
     if os.path.exists(update_file):
         with open(update_file, 'r') as file:
             data = json.load(file)
-            return data.get("version", "0.0.0")
-    return "0.0.0"  # Default if no update status file exists
+            return data.get("version", "1.0.0")
+    return "1.0.0"  # Default if no update status file exists
 
 def fetch_latest_version():
     """Fetch the latest version from GitHub."""
