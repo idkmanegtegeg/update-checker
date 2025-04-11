@@ -7,7 +7,7 @@ import json
 update_file = "update_status.json"
 
 # GitHub URL for the raw update file
-url = "https://github.com/idkmanegtegeg/update-checker"
+url = "https://raw.githubusercontent.com/idkmanegtegeg/update-checker/main/update.py"
 
 
 def get_current_version():
