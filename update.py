@@ -21,7 +21,7 @@ def get_current_version():
 def fetch_latest_version():
     """Fetch the latest version from GitHub."""
     try:
-        response = requests.get(github_url)
+        response = requests.get(url)  # Use 'url' instead of 'github_url'
         if response.status_code == 200:
             # Assume the latest update.py content is the "version info"
             return response.text
